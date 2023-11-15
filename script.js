@@ -1,27 +1,29 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-var numberCharacters; 
-var lowercase;
-var uppercase;
-var number;
-var specialCharacter;
-var components = [length, lowercase, uppercase, number, specialCharacter]
+var numberCharacters;
+var specialCharacter = " !\"#$%&'()*+,-./:;<=>?@[\\\]^_`{|}~";
+var number = "0123456789";
+var lowercase = "abcdefghijklmnopqrstuvwxyz"
+var uppercase = lowercase.toUpperCase();
+
 
 function generatePassword() {
-      window.prompt("Select Number of Characters") 
-        if (!numberCharacters) {
+      numberCharacters = window.prompt("Select Number of Characters") 
+        if (!numberCharacters || numberCharacters <8 || numberCharacters >128) {
           return;
         }
-        else (numberCharacters) {
-          for(let i=8; i<= 128 ; i++) {
-          
-          }
-        }
-      window.alert("Include Special Characters?")
-      window.alert("Include Numbers?")
-      window.alert("Include Lowercase Characters?")
-      window.alert("Include Uppercase Characters?")
+       
+      var includeSpec = window.confirm("Include Special Characters?")
+      var includeNum = window.confirm("Include Numbers?")
+      var includeLow = window.confirm("Include Lowercase Characters?")
+      var includeUpp = window.confirm("Include Uppercase Characters?")
+
+        if (includeSpec) {
+          specialCharacter.random()
+           }
+        
+        
 }
 
 // Write password to the #password input
