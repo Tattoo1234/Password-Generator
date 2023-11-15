@@ -8,7 +8,9 @@ var lowercase = "abcdefghijklmnopqrstuvwxyz"
 var uppercase = lowercase.toUpperCase();
 var toComplete;
 
+
 function generatePassword() {
+      var passwordString = ""; 
       numberCharacters = window.prompt("Select Number of Characters") 
         if (!numberCharacters || numberCharacters <8 || numberCharacters >128) {
           alert("Entry must be between 8 and 128 Characters")
@@ -35,9 +37,10 @@ function generatePassword() {
 
         
       for(let i=0; i<numberCharacters; i++){
-      toComplete[Math.floor(Math.random() * toComplete.length)]; 
+      passwordString = passwordString + toComplete[Math.floor(Math.random() * toComplete.length)]; 
       
       }
+      return passwordString
 
          
         
