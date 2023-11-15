@@ -14,14 +14,16 @@ then an alert appears asking if user wants to confirm including uppercase charac
 
     include number of characters
 
-    if special characters yes, add to function
+    if special characters yes, add to "toComplete"
     if no, move on
 
-    if numbers yes, add 
+    if numbers yes, add to "toComplete"
     if no, move on
 
-    if lowercase yes, add
+    if lowercase yes, add to "toComplete"
     if no, move 
 
-    if uppercase yes, add
+    if uppercase yes, add to "toComplete"
     if no, move
+
+
