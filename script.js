@@ -6,7 +6,7 @@ var specialCharacter = " !\"#$%&'()*+,-./:;<=>?@[\\\]^_`{|}~";
 var number = "0123456789";
 var lowercase = "abcdefghijklmnopqrstuvwxyz"
 var uppercase = lowercase.toUpperCase();
-var toComplete;
+var toComplete = "";
 
 
 function generatePassword() {
@@ -33,6 +33,10 @@ function generatePassword() {
             toComplete = toComplete + lowercase}
         if (includeUpp) { 
             toComplete = toComplete + uppercase}
+
+            else {
+              alert("At least one character type needs to be selected")
+            }
 
 
         
