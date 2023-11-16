@@ -34,22 +34,19 @@ function generatePassword() {
         if (includeUpp) { 
             toComplete = toComplete + uppercase}
 
-            else {
-              alert("At least one character type needs to be selected")
-            }
+        //    else (includeSpec && includeNum && includeLow && includeUpp) {
+        //       alert("At least one character type needs to be selected")}
+        }
 
-
+      
         
       for(let i=0; i<numberCharacters; i++){
       passwordString = passwordString + toComplete[Math.floor(Math.random() * toComplete.length)]; 
       
-      }
+      
       return passwordString
 
-         
-        
-        
-}
+      }
 
 // Write password to the #password input
 function writePassword() {
@@ -58,7 +55,9 @@ function writePassword() {
 
   passwordText.value = password;
 
-}
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+}
