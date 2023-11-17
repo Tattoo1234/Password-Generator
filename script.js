@@ -10,6 +10,7 @@ var toComplete = "";
 
 
 function generatePassword() {
+  toComplete = "";
   var passwordString = "";
   numberCharacters = window.prompt("Select Number of Characters")
   if (!numberCharacters || numberCharacters < 8 || numberCharacters > 128) {
