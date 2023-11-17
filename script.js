@@ -15,14 +15,14 @@ function generatePassword() {
   var passwordString = "";
   numberCharacters = window.prompt("Select Number of Characters")
 
-//  sends alert if user does not choose number of characters within parameters (8-128)
+  //  sends alert if user does not choose number of characters within parameters (8-128)
   if (!numberCharacters || numberCharacters < 8 || numberCharacters > 128) {
     alert("Entry must be between 8 and 128 Characters")
     return;
   }
 
 
-// Confirm Method to request preferences from the user, the variables includes what the user chooses
+  // Confirm Method to request preferences from the user, the variables includes what the user chooses
   var includeSpec = window.confirm("Include Special Characters?")
   var includeNum = window.confirm("Include Numbers?")
   var includeLow = window.confirm("Include Lowercase Characters?")
@@ -50,10 +50,10 @@ function generatePassword() {
 
 
 
-// for loop that chooses characters randomly
+  // for loop that chooses characters randomly
   for (let i = 0; i < numberCharacters; i++) {
     var textComplete = toComplete[Math.floor(Math.random() * toComplete.length)];
-    
+
     // adds characters to password when function is complete
     if (textComplete) {
       passwordString = passwordString + textComplete

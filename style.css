@@ -1,9 +1,11 @@
+/* universal selectors for viewport */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+/* styling parameters for section outside generator box */
 html,
 body,
 .wrapper {
@@ -30,6 +32,7 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
+/* styling parameters for generator box */
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -72,12 +75,12 @@ header {
   clear: both;
 }
 
+/* generate button */
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
   color: hsl(0, 0%, 100%);
   display: inline-block;
   font-size: 22px;
@@ -97,6 +100,7 @@ button[disabled] {
   float: right;
 }
 
+/* styling parameters for section of generator box where the password is displayed */
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -118,6 +122,7 @@ button[disabled] {
   overflow: hidden;
 }
 
+/* responsiveness settings */
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
