@@ -38,14 +38,20 @@ function generatePassword() {
     toComplete = toComplete + uppercase
   }
 
-  //    else (includeSpec && includeNum && includeLow && includeUpp) {
-  //       alert("At least one character type needs to be selected")}
+  if (!includeSpec && !includeNum && !includeLow && !includeUpp) {
+    alert("At least one character type needs to be selected")
+  }
+
 
 
 
 
   for (let i = 0; i < numberCharacters; i++) {
-    passwordString = passwordString + toComplete[Math.floor(Math.random() * toComplete.length)];
+    var textComplete = toComplete[Math.floor(Math.random() * toComplete.length)];
+    if (textComplete) {
+      passwordString = passwordString + textComplete
+    }
+
   }
 
   return passwordString
