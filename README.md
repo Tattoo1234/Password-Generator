@@ -7,6 +7,8 @@ In this project use of Javascript was applied, implementing functions and variab
 ## Usage
 ![program screenshot](Assets/ScreenshotPasswordGenerator.png)
 
+https://tattoo1234.github.io/Password-Generator
+
 ## License
 MIT
 
