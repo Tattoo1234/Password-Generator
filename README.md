@@ -5,7 +5,7 @@ Given a starter code, a program was written to allow a User to generate a random
 In this project use of Javascript was applied, implementing functions and variables.  Basic application of this Javascript was learned.  
 
 ## Usage
-![program screenshot](assets/ScreenshotPasswordGenerator.png)
+![program screenshot](Assets/ScreenshotPasswordGenerator.png)
 
 ## License
 MIT
